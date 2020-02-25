@@ -30,7 +30,7 @@ POST /orderSupplier/new
 GET /product
 
 response:
-```json
+```javascript
 [{
     'error': 0,
     'length': 10,
@@ -58,7 +58,7 @@ response:
 GET /product/{id}
 
 response:
-```json
+```javascript
 [{
     'error': 0,
     'data': {
