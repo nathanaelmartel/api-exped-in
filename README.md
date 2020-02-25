@@ -29,9 +29,9 @@ POST /orderSupplier/new
 ### Récupération de tous les produits
 GET /product
 
-```json
 response:
-{
+```json
+[{
     'error': 0,
     'length': 10,
     'data': [
@@ -51,15 +51,15 @@ response:
         },
         …
     ]
-}
+}]
 ```
 
 ### Récupération d'un produit
 GET /product/{id}
 
-```json
 response:
-{
+```json
+[{
     'error': 0,
     'data': {
             'id': ''
@@ -75,5 +75,5 @@ response:
             'poids':
             'stock':
         }
-}
+}]
 ```
