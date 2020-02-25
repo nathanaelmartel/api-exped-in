@@ -1,5 +1,5 @@
-# api-exped-in
-Wraper pour l'API Exped'In
+# API Exped'In
+Wraper php pour l'API Exped'In et documentation.
 
 ## Authentification
 
@@ -7,6 +7,7 @@ Vous aurez besoins d'une clée ainsi que de l'URL de l'API. La clée doit être 
 
 ```php
 <?php
+require_once 'ExpedInWrapper.php';
 $api = new \ExpedIn\ExpedInWrapper([
     'key' => 'your_key',
     'url' => 'api_url',

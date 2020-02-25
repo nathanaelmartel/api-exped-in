@@ -16,22 +16,33 @@ $api = new \ExpedIn\ExpedInWrapper([
 ]);
 
 // create one order
-/*$new_order = [
+$new_order = [
     'id_order' => time(), // your order ID
     'reference' => 'MYREF'.time(), // your unique reference
-    'supplier_name' => 'fournisseur',
-    'supplier_reference' => 'REF_FOUR',
+    'customer' => 'John Doe',
+    'shipping_address' => [
+        'first_name' => 'John',
+        'last_name' => 'Doe',
+        'phone' => '0123456789',
+        'city' => '',
+        'zip' => '',
+        'province' => '',
+        'country' => '',
+        'addresse2' => '',
+        'company' => '',
+        'country_code' => '',
+        'province_code' => '',
+        'email' => '',
+    ],
+    'shipping' => 'DPD', // 'DPD', 'Exped-In'
     'products' => [
         [
             'sku' => '1234567890123',
-            'reference' => 'REFPRODUCT',
-            'name' => 'Produit alpha',
-            'ean13' => '1234567890123',
             'quantity' => 1,
         ],
     ],
 ];
-$result = $api->setOrder($new_order);*/
+$result = $api->setOrder($new_order);
 
 // get all orders
 $orders = $api->getOrders();
